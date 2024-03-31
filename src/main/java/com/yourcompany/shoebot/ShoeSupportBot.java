@@ -1,6 +1,8 @@
 package com.yourcompany.shoebot;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
+import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
@@ -36,7 +38,6 @@ public class ShoeSupportBot extends TelegramLongPollingBot {
     }
 
     private String processMessage(String messageText) {
-        // Lowercase the message to simplify matching
         messageText = messageText.toLowerCase();
 
         switch (messageText) {
@@ -58,6 +59,16 @@ public class ShoeSupportBot extends TelegramLongPollingBot {
                 return "Check out our latest promotion: Buy one get one 50% off! Available until the end of this month.";
             default:
                 return "I'm not sure how to answer that. Can you try asking something else?";
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
+            botsApi.registerBot(new ShoeSupportBot());
+            System.out.println("ShoeSupportBot is now running!");
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
         }
     }
 }
