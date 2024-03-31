@@ -50,9 +50,9 @@ public class ShoeSupportBot extends TelegramLongPollingBot {
             case "color":
                 return "Our shoes come in a variety of colors: red, blue, black, white. Which color do you prefer?";
             case "store locations":
-                return "Our stores are located in New York, Los Angeles, and Chicago. Which location are you closest to?";
+                return "Our stores are located in Visakhapatnam, Pathankot, Chandigarh";
             case "contact numbers":
-                return "You can reach us at +123456789 for support. What query do you have?";
+                return "You can reach us at 9550578004 for support. What query do you have?";
             case "returns":
                 return "You can return your shoes within 30 days of purchase. Please visit our website or contact support for assistance.";
             case "promotions":

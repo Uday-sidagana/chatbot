@@ -47,7 +47,11 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JAR Application.shoebot-1.0-SNAPSHOT.jar">
+    <configuration name="shoebot-1.0-SNAPSHOT-jar-with-dependencies.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/shoebot-1.0-SNAPSHOT-jar-with-dependencies.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="shoebot-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/shoebot-1.0-SNAPSHOT.jar" />
       <method v="2" />
@@ -55,6 +59,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.shoebot-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.shoebot-1.0-SNAPSHOT-jar-with-dependencies.jar" />
       </list>
     </recent_temporary>
   </component>
